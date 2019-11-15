@@ -1,5 +1,6 @@
 ﻿using System;
 using Xunit;
+using B9PartSwitch.Fishbones;
 using B9PartSwitch.Fishbones.Parsers;
 using B9PartSwitchTests.TestUtils.DummyTypes;
 
@@ -7,6 +8,9 @@ namespace B9PartSwitchTests.Fishbones.Parsers
 {
     public class NodeObjectWrapperTest
     {
+        [NodeObject]
+        private class DummyNodeObject { }
+
         #region For
 
         [Fact]
@@ -27,6 +31,13 @@ namespace B9PartSwitchTests.Fishbones.Parsers
         public void TestFor__ConfigNode()
         {
             Assert.IsType<NodeObjectWrapperConfigNode>(NodeObjectWrapper.For(typeof(ConfigNode)));
+        }
+
+        [Fact]
+        public void TestFor__NodeObject()
+        {
+            NodeObjectWrapperNodeObject wrapper = Assert.IsType<NodeObjectWrapperNodeObject>(NodeObjectWrapper.For(typeof(DummyNodeObject)));
+            Assert.Equal(typeof(DummyNodeObject), wrapper.type);
         }
 
         [Fact]
@@ -60,6 +71,12 @@ namespace B9PartSwitchTests.Fishbones.Parsers
         public void TestIsNodeType__ConfigNode()
         {
             Assert.True(NodeObjectWrapper.IsNodeType(typeof(ConfigNode)));
+        }
+
+        [Fact]
+        public void TestIsNodeType__NodeObject()
+        {
+            Assert.True(NodeObjectWrapper.IsNodeType(typeof(DummyNodeObject)));
         }
 
         [Fact]

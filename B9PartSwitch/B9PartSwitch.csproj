@@ -71,6 +71,7 @@
     <Compile Include="Fishbones\FieldWrappers\IFieldWrapper.cs" />
     <Compile Include="Fishbones\FieldWrappers\PropertyWrapper.cs" />
     <Compile Include="Fishbones\IContextualNode.cs" />
+    <Compile Include="Fishbones\NodeObject.cs" />
     <Compile Include="Fishbones\NodeData.cs" />
     <Compile Include="Fishbones\NodeDataList.cs" />
     <Compile Include="Fishbones\NodeDataListBuilder.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Fishbones\Parsers\NodeObjectWrapperConfigNode.cs" />
     <Compile Include="Fishbones\Parsers\NodeObjectWrapperIConfigNode.cs" />
     <Compile Include="Fishbones\Parsers\NodeObjectWrapperIContextualNode.cs" />
+    <Compile Include="Fishbones\Parsers\NodeObjectWrapperNodeObject.cs" />
     <Compile Include="Fishbones\Parsers\OverrideValueParseMap.cs" />
     <Compile Include="Fishbones\Parsers\PartResourceDefinitionValueParser.cs" />
     <Compile Include="Fishbones\Parsers\ScaleParser.cs" />
