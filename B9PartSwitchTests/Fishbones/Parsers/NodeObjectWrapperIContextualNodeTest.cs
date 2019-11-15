@@ -117,6 +117,11 @@ namespace B9PartSwitchTests.Fishbones.Parsers
             };
 
             ConfigNode node = wrapper.Save(obj, Exemplars.SaveContext);
+
+            Assert.Single(node.values);
+            Assert.Equal("value", node.values[0].name);
+            Assert.Equal("stuff", node.values[0].value);
+            Assert.Empty(node.nodes);
         }
 
         [Fact]
@@ -140,6 +145,17 @@ namespace B9PartSwitchTests.Fishbones.Parsers
 
             Assert.Contains("Expected parameter of type B9PartSwitch.Fishbones.IContextualNode but got System.String", ex.Message);
             Assert.Equal("obj", ex.ParamName);
+        }
+
+        [Fact]
+        public void TestSave__NullContext()
+        {
+            ArgumentNullException ex = Assert.Throws<ArgumentNullException>(delegate
+            {
+                wrapper.Save(new DummyIContextualNode(), null);
+            });
+
+            Assert.Equal("context", ex.ParamName);
         }
 
         #endregion
