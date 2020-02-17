@@ -1,0 +1,27 @@
+Localization
+
+{
+
+    en-us
+
+    {
+        #LOC_B9PartSwitch_ModuleB9PartSwitch_title = Kapcsolható rész
+        #LOC_B9PartSwitch_ModuleB9PartSwitch_tank_volume = Térfogat
+        #LOC_B9PartSwitch_ModuleB9PartSwitch_default_switcher_description = Altípus
+        #LOC_B9PartSwitch_ModuleB9PartSwitch_default_switcher_description_plural = Altípusok
+        #LOC_B9PartSwitch_ModuleB9PartSwitch_select_subtype = Válassz <<1>>
+        #LOC_B9PartSwitch_PartSwitchFlightDialog_resources_will_be_dumped_warning = <<1>> olyan erőforrásokkal rendelkezik, amelyeket a <<2>>
+        #LOC_B9PartSwitch_PartSwitchFlightDialog_confirm_resource_removal_dialog_title = Erőforrás eltávolításának megerősítése
+        #LOC_B9PartSwitch_PartSwitchFlightDialog_select_new_subtype_dialog_title = Válassz <<1>>
+        #LOC_B9PartSwitch_PartSwitchFlightDialog_current_subtype_label = <<1>> (Jelenlegi)
+        #LOC_B9PartSwitch_tank_type_lf = Folyékony üzemanyag
+        #LOC_B9PartSwitch_tank_type_lfo = FLO
+        #LOC_B9PartSwitch_tank_type_monoprop = Egykomponensű üzemanyag
+        #LOC_B9PartSwitch_tank_type_ec = Akkumulátor
+        #LOC_B9PartSwitch_SwitcherSubtypeDescriptionGenerator_max_temp = Max hőmérséklet
+        #LOC_B9PartSwitch_SwitcherSubtypeDescriptionGenerator_max_skin_temp = Felületi Max hőmérséklet
+        #LOC_B9PartSwitch_SwitcherSubtypeDescriptionGenerator_crash_tolerance = Ütközési törés tolerancia
+        #LOC_B9PartSwitch_SwitcherSubtypeDescriptionGenerator_tank_empty = Üres
+        #LOC_B9PartSwitch_SwitcherSubtypeDescriptionGenerator_tank_full = Tele
+    }
+}
